@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Boss di Cuphead</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-boss">
+    <main class="pagina-libro pagina-elenco-boss">
+        <h1>I boss di Cuphead</h1>
+
+        <h2 id="titolo-isola1">Isola Calamaio I</h2>
+        <div class="griglia-boss"  id="isola1">
+
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/RgpN9rFb4Pg?si=EzQJQrfqaMlJnxTB">Genni Gelatina</a></h3>
+                <img src="immagini/FotoBoss1.png" alt="Genni Gelatina">
+                <p>Genni Gelatina è uno dei primi boss di Cuphead. Appare nel livello "Ruse Of An Ooze".</p>
+            </article>
+
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/yFj1DZk0iQY?si=M9iRwRQkLh92PA-u">Floris Rivoltella</a></h3>
+                <img src="immagini/FotoBoss2.png" alt="Floris Rivoltella">
+                <p>Floris Rivoltella è il boss del livello intitolato "Floral Fury".</p>
+            </article>
+
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/Hc-lRXWIMuU?si=pjNd017Q5K8DHCu4">Krak e Krok</a></h3>
+                <img src="immagini/FotoBoss3.png" alt="Krak e Krok">
+                <p>Ribby e Croaks sono una coppia di boss in Cuphead. Li si incontra e li si affronta nel livello Clip Joint Calamity.</p>
+            </article>
+        </div>
+        
+    
+        <h2 id="titolo-isola2">Isola Calamaio II</h2>
+        <div class="griglia-boss" id="isola2">
+            
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/eIROTM2d9R4?si=3sivokBiUeaRwbdD">Djimmi the Great</a></h3>
+                <img src="immagini/FotoBoss4.png" alt="Djimmi the Great">
+                <p>Djimmi The Great è uno dei tre boss inizialmente disponibili dopo aver raggiunto quest'isola. È il boss con il maggior numero di fasi dell'intero gioco, per un totale di cinque.</p>
+            </article>
+            
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/hapvHb890W0?si=wyQmjkrMbjGrwaBO">Beppi the Clown</a></h3>
+                <img src="immagini/FotoBoss5.png" alt="Beppi the Clown">
+                <p>Beppi the Clown è uno dei tre boss inizialmente disponibili dopo aver raggiunto quest'isola.</p>
+            </article>
+           
+            <article class="scheda-boss">
+                <h3><a href="https://youtu.be/SS-Oc2R3HKk?si=LxXzC3TWzaAUq97a">Grim Matchstick</a></h3>
+                <img src="immagini/FotoBoss6.png" alt="Grim Matchstick">
+                <p>Grim Matchstick si sblocca dopo aver sconfitto Beppi the Clown, oppure prendendo una scorciatoia. Il suo livello si intitola Fiery Frolic.</p>
+            </article>
+        </div>
+        
+        <h2 id="titolo-isola3">Isola Calamaio III</h2>
+        <div class="griglia-boss" id="isola3">
+        
+            <article class="scheda-boss">
+                <h3>Captain Brineybeard</h3>
+                <img src="immagini/FotoBoss7.png" alt="Captain Brineybeard">
+                <p>Brineybeard è il secondo dei due boss inizialmente disponibili dopo aver raggiunto quest'isola.</p>
+            </article>
+
+            <article class="scheda-boss">
+                <h3>Werner Werman</h3>
+                <img src="immagini/FotoBoss8.png" alt="Werner Werman">
+                <p>Werner Werman si sblocca dopo aver completato uno dei livelli di tipo "Run 'n' Gun", Il suo livello si intitola Murine Corps.</p>
+            </article>
+
+            <article class="scheda-boss">
+                <h3>Dr. Kahl's Robot</h3>
+                <img src="immagini/FotoBoss9.png" alt="Dr. Kahl's Robot">
+                <p>Sconfiggerlo permette di accedere a Sally Stageplay. Il suo livello si intitola Junkyard Jive!.</p>
+            </article>
+        </div>
+
+        <h2 id="titolo-isola4">Boss finali</h2>
+        <div class="griglia-boss" id="isola4">
+           
+            <article class="scheda-boss">
+                <h3>King Dice</h3>
+                <img src="immagini/FotoBoss10.png" alt="King Dice">
+                <p>King Dice è l'unico boss inizialmente disponibile dopo aver fatto il proprio ingresso a Inkwell Hell. Sconfiggerlo permette di accedere a The Devil. Il suo livello si intitola "All Bets Are Off!". Non è possibile affrontarlo in modalità Semplice (Simple Mode).</p>
+            </article>
+
+            <article class="scheda-boss">
+                <h3>The Devil</h3>
+                <img src="immagini/FotoBoss11.png" alt="The Devil">
+                <p>The Devil, per il quale Cuphead e Mugman raccolgono i contratti delle anime, funge da antagonista principale e boss finale del gioco. Si sblocca dopo aver sconfitto King Dice. Il suo livello si intitola "One Hell Of A Time". Non è possibile affrontarlo nella modalità Semplice (Simple Mode).</p>
+            </article>
+        </div>
+
+        <div class="navigazione-isole">
+            <button id="isola-precedente" disabled>←</button>
+            <span id="numero-isola">Isola 1</span>
+            <button id="isola-successiva">→</button>
+        </div>
+        
+        <a href="index.html">Torna alla pagina iniziale</a>
+    </main>
+
+    <script>
+        const titoli = [
+            document.getElementById("titolo-isola1"),
+            document.getElementById("titolo-isola2"),
+            document.getElementById("titolo-isola3"),
+            document.getElementById("titolo-isola4")
+        ];
+    
+        const isole = [
+            document.getElementById("isola1"),
+            document.getElementById("isola2"),
+            document.getElementById("isola3"),
+            document.getElementById("isola4")
+        ];
+    
+        const numeroIsola = document.getElementById("numero-isola");
+        const precedente = document.getElementById("isola-precedente");
+        const successiva = document.getElementById("isola-successiva");
+        let paginaAttuale = 0;
+    
+        function mostraPagina() {
+            titoli.forEach((titolo, i) => {
+                titolo.style.display = i === paginaAttuale ? "block" : "none";
+                isole[i].style.display = i === paginaAttuale ? "grid" : "none";
+            });
+    
+            numeroIsola.textContent =
+                paginaAttuale === 3 ? "Boss finali" : "Isola " + (paginaAttuale + 1);
+    
+            precedente.disabled = paginaAttuale === 0;
+            successiva.disabled = paginaAttuale === 3;
+        }
+    
+        precedente.addEventListener("click", function () {
+            if (paginaAttuale > 0) {
+                paginaAttuale--;
+                mostraPagina();
+            }
+        });
+    
+        successiva.addEventListener("click", function () {
+            if (paginaAttuale < 3) {
+                paginaAttuale++;
+                mostraPagina();
+            }
+        });
+    
+        mostraPagina();
+    </script>
+
+</body>
+</html>

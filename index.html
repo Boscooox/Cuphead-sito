@@ -6,7 +6,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cuphead</h1>
-    <p>Un sito dedicato al videogioco Cuphead.</p>
+    <main class="pagina-libro">
+        <section class="pagina attiva">
+            <img class="foto-libro foto-inizio" src="immagini/immagineLibro1.jfif" alt="Cuphead e Mugman">
+                <p>
+                    Cuphead è un videogioco d’azione e piattaforme sviluppato da Studio MDHR.
+                    In questo sito presenterò il gioco, i protagonisti e i principali boss e livelli.
+                </p>
+        </section>
+        <section class="pagina">
+            <h2>La storia</h2>
+            <img class="foto-libro foto-storia" src="immagini/FotoLibro2.jpg" alt="Cuphead e Mugman">
+            <p>
+                Dopo aver perso una scommessa con il Diavolo, <a  class="link-cuphead" href="Cuphead.html">Cuphead</a> e <a class="link-mugman" href="Mugman.html">Mugman</a> devono
+                viaggiare per le Isole Calamaio e raccogliere i contratti dei debitori.
+                Inizia così la loro avventura tra boss bizzarri e sfide difficili.
+            </p>
+        </section>
+        <section class="pagina">
+            <h2>Com’è strutturato il gioco</h2>
+            <img class="foto-libro foto-mappa" src="immagini/Mappa.png" alt="Mappa delle Isole Calamaio">
+            <p>
+                Il viaggio attraversa le Isole Calamaio, divise in aree con livelli
+                <a href="https://it.wikipedia.org/wiki/Videogioco_a_piattaforme">platform</a> e scontri contro i <a  class="link-cuphead" href="bossElivelli.html">boss.</a>
+            </p>
+        </section>
+        <button id="avanti" aria-label="Pagina successiva">➜</button>
+    </main>
+    <script>
+        const pagine = document.querySelectorAll(".pagina");
+        const freccia = document.getElementById("avanti");
+        let paginaAttuale = 0;
+    
+        freccia.addEventListener("click", function () {
+            pagine[paginaAttuale].classList.remove("attiva");
+            paginaAttuale = (paginaAttuale + 1) % pagine.length;
+            pagine[paginaAttuale].classList.add("attiva");    
+        });
+        
+        //mappa
+        const mappa = document.querySelector(".foto-mappa");
+        mappa.addEventListener("click", function () {
+        mappa.classList.toggle("ingrandita");
+        });
+    </script>
 </body>
 </html>

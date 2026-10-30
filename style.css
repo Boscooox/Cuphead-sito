@@ -1,8 +1,13 @@
 body {
-    background-color: #fff4d6;
-    color: #3b2416;
-    font-family: Georgia, serif;
-    margin: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("immagini/sfondo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -11,5 +16,266 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
+}
+
+img {
+    width: 700px;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.pagina-libro {
+    margin: 270px auto 0;
+    background-color: #f8e6b0;
+    border: 8px double #7a3e20;
+    box-shadow: 5px 8px 0 #3b2015;
+    width: min(900px, 75vw);
+    height: 430px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pagina-libro p {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+}
+
+.foto-libro {
+    width: 480px;
+    height: 260px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#avanti {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.pagina {
+    display: none;
+}
+
+.pagina.attiva {
+    display: block;
+}
+
+.foto-inizio {
+    width: 480px;
+    height: 260px;
+}
+
+.foto-storia {
+    width: 480px;
+    height: 200px;
+}
+
+.pagina p {
+    position: static;
+    margin: 12px 0 0;
+    line-height: 1.2;
+}
+
+.pagina h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.foto-storia {
+    height: 220px;
+}
+
+.pagina .foto-storia {
+    margin-top: 0;
+}
+
+.foto-mappa {
+    cursor: zoom-in;
+}
+
+.foto-mappa.ingrandita {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 85vh;
+    object-fit: contain;
+    z-index: 1000;
+    cursor: zoom-out;
+}
+
+.link-cuphead,
+.link-mugman {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-cuphead {
+    color: #c62828;
+}
+
+.link-mugman {
+    color: #1565c0;
+}
+
+a.link-cuphead,
+a.link-cuphead:visited,
+a.link-cuphead:hover,
+a.link-cuphead:active {
+    color: #c62828;
+    text-decoration: none;
+}
+
+a.link-mugman,
+a.link-mugman:visited,
+a.link-mugman:hover,
+a.link-mugman:active {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+pagine cuphead e mugman
+
+body.pagina-personaggio1 {
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+
+body.pagina-personaggio1 .pagina-libro {
+    height: auto;
+    min-height: 430px;
+    margin: 270px auto 40px;
+}
+
+body.pagina-personaggio1 .foto-personaggio1 {
+    display: block;
+    width: 420px;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+body.pagina-personaggio1 .pagina-libro p {
+    position: static;
+    margin: 10px auto 16px;
+    line-height: 1.4;
+}
+
+body.pagina-personaggio1 .pagina-libro a {
+    display: block;
+    margin: 12px auto 0;
+}
+
+.titolo-mugman {
+    color: #1565c0;
+}
+
+
+boss
+
+
+body.pagina-boss {
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+
+.pagina-elenco-boss {
+    height: auto;
+    min-height: 430px;
+    margin: 270px auto 40px;
+}
+
+.griglia-boss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.scheda-boss {
+    padding: 12px;
+    border: 3px double #7a3e20;
+    background-color: #fff1c9;
+}
+
+.scheda-boss img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.scheda-boss p {
+    position: static;
+    margin: 8px 0;
+    line-height: 1.3;
+}
+
+body.pagina-boss {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.pagina-elenco-boss {
+    height: auto;
+    min-height: 430px;
+    margin: 150px auto 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.griglia-boss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+#titolo-isola2,
+#isola2 {
+    display: none;
+}
+
+.navigazione-isole button {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.scheda-boss {
+    padding: 8px;
+    min-height: 0;
+    border: 3px double #7a3e20;
+    background-color: #fff1c9;
+}
+
+#titolo-isola2,
+#isola2,
+#titolo-isola3,
+#isola3,
+#titolo-isola4,
+#isola4 {
+    display: none;
+}
+
+#isola4 {
+    grid-template-columns: repeat(2, 268px);
+    justify-content: center;
 }
