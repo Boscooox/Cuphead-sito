@@ -2,23 +2,33 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Cuphead</title>
+    <title>Mugman</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="pagina-personaggio1">
     <main class="pagina-libro pagina-personaggio1">
-        <body class="pagina-personaggio1">
         <h1 class ="titolo-mugman">Mugman</h1>
-
-        <img class="foto-personaggio1"
-             src="immagini/MugmanFoto.png"
-             alt="Mugman">
-
+        
+        <div class="immagini-personaggi">
+            <img class="foto-personaggio1"
+                 src="immagini/MugmanFoto.png"
+                 alt="Mugman">
+            
+            <img class="foto-internet"
+                 src="https://thevisithors.altervista.org/images/Mugman_results.png"
+                 alt="Mugman in un'altra scena">
+        </div>
         <p>
-            protagonista del gioco e della serie animata e fratello gemello di Mugman. È un omino dei cartoni animati caratterizzato da una testa che è una tazza, con dentro una cannuccia a strisce rosse piegata e con dei pantaloncini rossi. È giocondo e impulsivo: e a causa sua, lui e Mugman si ritrovano indebitati con Satanasso delle loro anime, dando il via agli eventi del gioco.
-        </p>
+            Nell'aspetto generale, Mugman è molto simile al suo fratello gemello maggiore Cuphead: la sua testa ricorda una tazza e il suo corpo è quasi identico a quello del fratello. Indossa una maglia nera a maniche lunghe, guanti bianchi, un paio di pantaloncini e scarpe marroni, sebbene in alcune illustrazioni appaia con guanti gialli.
+        </p>   
 
         <a href="index.html">Torna alla pagina iniziale</a>
     </main>
+
+    <script>
+        document.querySelectorAll(".immagini-personaggi img").forEach(function (immagine) {
+            immagine.classList.add("animazione-ingresso");
+        });
+    </script>
 </body>
 </html>

@@ -149,7 +149,7 @@ a.link-mugman:active {
     text-decoration: none;
 }
 
-pagine cuphead e mugman
+/*pagine cuphead e mugman*/
 
 body.pagina-personaggio1 {
     min-height: 100vh;
@@ -188,7 +188,7 @@ body.pagina-personaggio1 .pagina-libro a {
 }
 
 
-boss
+/*boss*/
 
 
 body.pagina-boss {
@@ -278,4 +278,102 @@ body.pagina-boss {
 #isola4 {
     grid-template-columns: repeat(2, 268px);
     justify-content: center;
+}
+
+#isola4 .scheda-boss {
+    padding: 8px;
+}
+
+#isola4 .scheda-boss p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 6px 0;
+}
+
+.foto-internet {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 12px auto;
+}
+
+.immagini-personaggi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px
+}
+
+.immagini-personaggi img {
+    width: 180px;
+    height: 220px;
+    object-fit: contain;
+    margin: 0;
+}
+
+body.pagina-personaggio1 .immagini-personaggi img {
+    width: 180px;
+    height: 220px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.foto-da-internet {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.immagini-inizio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    height: 230px;
+}
+
+.immagini-inizio img {
+    width: 45%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+.pagina.attiva p {
+    margin-top: 10px;
+}
+
+.fantasma-laterale {
+    position: fixed;
+    top: 50%;
+    width: 230px;
+    height: auto;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.fantasma-laterale.sinistra {
+    left: 55px;
+}
+
+.fantasma-laterale.destra {
+    right: 55px;
+}
+
+@keyframes entrata-personaggio {
+    from {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animazione-ingresso {
+    animation: entrata-personaggio 1s ease-out;
 }
