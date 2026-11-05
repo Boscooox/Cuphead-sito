@@ -120,34 +120,23 @@ html, body {
 }
 
 .link-cuphead,
-.link-mugman {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.link-cuphead {
-    color: #c62828;
-}
-
-.link-mugman {
-    color: #1565c0;
-}
-
-a.link-cuphead,
 a.link-cuphead:visited,
 a.link-cuphead:hover,
 a.link-cuphead:active {
     color: #c62828;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-a.link-mugman,
+.link-mugman,
 a.link-mugman:visited,
 a.link-mugman:hover,
 a.link-mugman:active {
     color: #1565c0;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
 }
+
 
 /*pagine cuphead e mugman*/
 
