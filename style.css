@@ -11,8 +11,8 @@ body {
 }
 
 html {
-    height: 100%;
-    overflow-y: scroll;
+    min-height: 100%;
+    overflow-y: auto;
 }
 
 body {
@@ -267,7 +267,7 @@ body.pagina-boss {
     right: 55px;
 }
 
-/* Animazione delle immagini dei personaggi */
+/* Animazione dei personaggi */
 @keyframes entrata-personaggio {
     from {
         transform: scale(0.5);
@@ -284,28 +284,14 @@ body.pagina-boss {
     animation: entrata-personaggio 1s ease-out;
 }
 
-/* Adattamento semplice per portatili */
+/* Schermi PC più stretti */
 @media (min-width: 701px) and (max-width: 1200px) {
     .pagina-libro {
         width: 85vw;
-        margin-top: 100px;
-    }
-
-    body.pagina-personaggio1 .pagina-libro {
-        margin-top: 100px;
     }
 
     .pagina-elenco-boss {
         width: 85vw;
-        margin-top: 80px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 18px;
     }
 
     .immagini-personaggi img {
@@ -316,20 +302,27 @@ body.pagina-boss {
         gap: 10px;
     }
 
-    .scheda-boss p {
-        font-size: 15px;
+    .fantasma-laterale {
+        width: 160px;
     }
 
-    .fantasma-laterale {
-        display: none;
+    .fantasma-laterale.sinistra {
+        left: 10px;
+    }
+
+    .fantasma-laterale.destra {
+        right: 10px;
     }
 }
 
-/* Se la finestra del portatile è bassa */
-@media (min-width: 701px) and (max-height: 800px) {
-    .pagina-libro,
+/* Finestre non molto alte */
+@media (max-height: 850px) {
+    .pagina-libro {
+        margin-top: 100px;
+    }
+
     body.pagina-personaggio1 .pagina-libro,
     .pagina-elenco-boss {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 }
